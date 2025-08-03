@@ -1,0 +1,22 @@
+#Second largest in array
+ class Array1{
+     public static void main(String[] args){
+	 int[] arr={25,21,32,89,35,56};
+	
+	 for(int i=1 ;i<arr.length;i++)
+	 {
+		 if(arr[i]<arr[i-1])
+		 {
+			 int temp=arr[i];
+			 arr[i]=arr[i-1];
+			 arr[i-1]=temp;
+		 }
+	 }
+	  for(int i=0 ;i<arr.length;i++)
+	 {
+		 System.out.println(arr[i]);
+	 }
+	 System.out.println(arr[arr.length-2]);
+	 
+	 }
+}
